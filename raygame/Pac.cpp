@@ -35,4 +35,7 @@ void Pac::onCollision(Actor* other)
 
 		setVelocity({ 0, 0 });
 	}
+	else if (Mud* mud = dynamic_cast<Mud*>(other)) {
+
+	}
 }
