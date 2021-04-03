@@ -71,6 +71,12 @@
     <ClCompile Include="Mud.cpp">
       <Filter>Pac Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="SteeringBehavior.cpp">
+      <Filter>Pac Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EvadePathBehavior.cpp">
+      <Filter>Pac Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Game.h">
@@ -122,6 +128,12 @@
       <Filter>Engine Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Mud.h">
+      <Filter>Pac Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SteeringBehavior.h">
+      <Filter>Pac Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EvadePathBehavior.h">
       <Filter>Pac Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -220,6 +220,7 @@ private:
     char m_icon;
     int m_color;
 
+    
     bool m_started = false;
     bool m_static = false;
     Actor* m_parent = nullptr;

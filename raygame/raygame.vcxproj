@@ -165,6 +165,7 @@
     <ClCompile Include="Actor.cpp" />
     <ClCompile Include="Agent.cpp" />
     <ClCompile Include="Behavior.cpp" />
+    <ClCompile Include="EvadePathBehavior.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="Ghost.cpp" />
     <ClCompile Include="KeyboardBehavior.cpp" />
@@ -179,12 +180,14 @@
     <ClCompile Include="SeekBehavior.cpp" />
     <ClCompile Include="SeekPathBehavior.cpp" />
     <ClCompile Include="Sprite.cpp" />
+    <ClCompile Include="SteeringBehavior.cpp" />
     <ClCompile Include="Wall.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Actor.h" />
     <ClInclude Include="Agent.h" />
     <ClInclude Include="Behavior.h" />
+    <ClInclude Include="EvadePathBehavior.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="Ghost.h" />
     <ClInclude Include="KeyboardBehavior.h" />
@@ -198,6 +201,7 @@
     <ClInclude Include="SeekBehavior.h" />
     <ClInclude Include="SeekPathBehavior.h" />
     <ClInclude Include="Sprite.h" />
+    <ClInclude Include="SteeringBehavior.h" />
     <ClInclude Include="Wall.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

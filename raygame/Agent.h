@@ -1,5 +1,6 @@
 #pragma once
 #include "Actor.h"
+#include "SeekBehavior.h"
 #include <Vector2.h>
 #include <vector>
 
@@ -60,10 +61,15 @@ public:
 	/// <param name="behavior"></param>
 	void addBehavior(Behavior* behavior);
 
+
+	void setTarget(Agent* target) { m_target = target; }
+	Agent* getTarget() { return m_target; }
+
 private:
 	std::vector<Behavior*> m_behaviorList;
 
 	MathLibrary::Vector2 m_force = { 0, 0 };
 	float m_maxForce;
+	Agent* m_target = nullptr;
 };
 
