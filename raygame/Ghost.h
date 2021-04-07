@@ -12,7 +12,7 @@ public:
 	/// <param name="speed">The maximum movement speed (magnitude)</param>
 	/// <param name="color">The color in 0xRRGGBBAA</param>
 	/// <param name="maze">The maze used for pathfinding</param>
-	Ghost(float x, float y, float speed, int color, Maze* maze);
+	Ghost(float x, float y, float speed, int color, Maze* maze, Agent* player);
 	~Ghost();
 
 	virtual void update(float deltaTime) override;

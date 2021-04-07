@@ -77,6 +77,15 @@
     <ClCompile Include="EvadePathBehavior.cpp">
       <Filter>Pac Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Decision.cpp">
+      <Filter>Engine Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BehaviorDecision.cpp">
+      <Filter>Engine Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BooleanDecision.cpp">
+      <Filter>Engine Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Game.h">
@@ -135,6 +144,18 @@
     </ClInclude>
     <ClInclude Include="EvadePathBehavior.h">
       <Filter>Pac Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Decision.h">
+      <Filter>Engine Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BehaviorDecision.h">
+      <Filter>Engine Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Condition.h">
+      <Filter>Pac Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BooleanDecision.h">
+      <Filter>Engine Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

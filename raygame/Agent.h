@@ -1,6 +1,6 @@
 #pragma once
 #include "Actor.h"
-#include "SeekBehavior.h"
+//#include "SeekBehavior.h"
 #include <Vector2.h>
 #include <vector>
 
