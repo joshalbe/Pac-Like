@@ -34,4 +34,3 @@ private:
 
 	Actor* m_target = nullptr;
 };
-

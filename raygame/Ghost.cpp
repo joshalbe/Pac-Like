@@ -3,14 +3,15 @@
 #include "Wall.h"
 #include "raylib.h"
 
+
 Ghost::Ghost(float x, float y, float maxSpeed, int color, Maze* maze, Agent* player)
 	: Agent(x, y, Maze::TILE_SIZE / 4.0f, maxSpeed, maxSpeed, color)
 {
-	m_target = player;
+	//m_target = player;
 	m_maze = maze;
 	m_pathfindBehavior = new SeekPathBehavior(maze);
 	m_pathfindBehavior->setColor(color);
-	m_pathfindBehavior->setTarget(m_target);
+	//m_pathfindBehavior->setTarget(m_target);
 	addBehavior(m_pathfindBehavior);
 }
 
@@ -21,7 +22,7 @@ Ghost::~Ghost()
 
 void Ghost::update(float deltaTime)
 {
-	m_pathfindBehavior->updatePath(this);
+	//m_pathfindBehavior->updatePath(this);
 	Agent::update(deltaTime);
 }
 
@@ -58,3 +59,4 @@ Actor* Ghost::getTarget()
 {
 	return m_target;
 }
+

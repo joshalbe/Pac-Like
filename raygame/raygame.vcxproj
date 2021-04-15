@@ -167,7 +167,9 @@
     <ClCompile Include="Behavior.cpp" />
     <ClCompile Include="BehaviorDecision.cpp" />
     <ClCompile Include="BooleanDecision.cpp" />
+    <ClCompile Include="Condition.cpp" />
     <ClCompile Include="Decision.cpp" />
+    <ClCompile Include="DecisionTreeBehavior.cpp" />
     <ClCompile Include="EvadePathBehavior.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="Ghost.cpp" />
@@ -194,6 +196,7 @@
     <ClInclude Include="BooleanDecision.h" />
     <ClInclude Include="Condition.h" />
     <ClInclude Include="Decision.h" />
+    <ClInclude Include="DecisionTreeBehavior.h" />
     <ClInclude Include="EvadePathBehavior.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="Ghost.h" />

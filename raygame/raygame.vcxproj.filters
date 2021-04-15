@@ -86,6 +86,12 @@
     <ClCompile Include="BooleanDecision.cpp">
       <Filter>Engine Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="DecisionTreeBehavior.cpp">
+      <Filter>Engine Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Condition.cpp">
+      <Filter>Pac Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Game.h">
@@ -155,6 +161,9 @@
       <Filter>Pac Header Files</Filter>
     </ClInclude>
     <ClInclude Include="BooleanDecision.h">
+      <Filter>Engine Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DecisionTreeBehavior.h">
       <Filter>Engine Header Files</Filter>
     </ClInclude>
   </ItemGroup>

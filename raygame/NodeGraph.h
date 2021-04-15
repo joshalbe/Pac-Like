@@ -18,6 +18,7 @@ namespace NodeGraph
 		MathLibrary::Vector2 position;
 
 		float gScore;
+		float hScore;
 		Node* previous;
 
 		std::vector<Edge> connections;

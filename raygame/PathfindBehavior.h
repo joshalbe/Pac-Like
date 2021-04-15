@@ -38,16 +38,16 @@ public:
 	void updatePath(Agent* owner, MathLibrary::Vector2 destination);
 
 	/// <returns>The current target to use in pathfinding</returns>
-	MathLibrary::Vector2 getTargetPosition() { return m_targetPosition; }
+	Actor* getTarget() { return m_target; }
 	/// <summary>
 	/// Set the target to a new actor.
 	/// </summary>
 	/// <param name="target">The actor to use in pathfinding</param>
-	void setTarget(Actor* target) { m_targetPosition = target->getWorldPosition(); }
-	void setTarget(MathLibrary::Vector2 targetPosition) { m_targetPosition = targetPosition; }
+	void setTarget(Actor* target) { m_target = target; }
 
 	int getColor() { return m_color; }
 	void setColor(int color) { m_color = color; }
+
 
 protected:
 	virtual MathLibrary::Vector2 findDestination(Agent* owner) = 0;
@@ -56,7 +56,7 @@ private:
 	Maze* m_maze;
 	std::deque<NodeGraph::Node*> m_path;
 
-	MathLibrary::Vector2 m_targetPosition = MathLibrary::Vector2(0, 0);
+	Actor* m_target = nullptr;
 	bool m_needPath = true;
 	int m_color = 0xFFFFFFFF;
 };
