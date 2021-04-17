@@ -1,0 +1,14 @@
+Technical Information
+Created using Visual Studio 2019 
+Language used is C++ 
+Forked from vanPhelan/Pac-Like https://github.com/vanPhelan/Pac-Like
+
+AI Mechanics
+-EvadePathBehavior
+ - Moves the Ghost away from the player when nearby them
+
+-WanderBehavior
+ - Moves the ghost around aimlessly through the map
+
+-PursuePathBehavior
+ - Moves the ghost towards the player when far from them

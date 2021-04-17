@@ -2,16 +2,19 @@
 #include "Maze.h"
 #include "Wall.h"
 #include "raylib.h"
-
+#include "PursuePathBehavior.h"
+#include "DecisionTreeBehavior.h"
+#include "BehaviorDecision.h"
+#include "BooleanDecision.h"
 
 Ghost::Ghost(float x, float y, float maxSpeed, int color, Maze* maze, Agent* player)
 	: Agent(x, y, Maze::TILE_SIZE / 4.0f, maxSpeed, maxSpeed, color)
 {
-	//m_target = player;
 	m_maze = maze;
 	m_pathfindBehavior = new SeekPathBehavior(maze);
 	m_pathfindBehavior->setColor(color);
-	//m_pathfindBehavior->setTarget(m_target);
+	m_pathfindBehavior = new SeekPathBehavior(maze);
+	m_pathfindBehavior->setColor(color);
 	addBehavior(m_pathfindBehavior);
 }
 
@@ -22,7 +25,6 @@ Ghost::~Ghost()
 
 void Ghost::update(float deltaTime)
 {
-	//m_pathfindBehavior->updatePath(this);
 	Agent::update(deltaTime);
 }
 

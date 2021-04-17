@@ -28,7 +28,6 @@ Maze::~Maze()
 void Maze::draw()
 {
 	Scene::draw();
-	//NodeGraph::drawGraph(m_grid[0][0].node);
 }
 
 Maze::Tile Maze::getTile(MathLibrary::Vector2 position)

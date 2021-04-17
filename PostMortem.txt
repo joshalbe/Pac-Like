@@ -1,0 +1,16 @@
+Artificial Intelligence Assessment Post-Mortem
+
+Agents:
+-Ghost
+An agent that chases the player
+I would have liked it to kinda play tag with the player, persuing them when they're far and evading them when
+they're close.
+Unfortunately, only the persuing behavior really stuck due to so many issues with pathfinding.
+
+Behaviors:
+-EvadePathBehavior
+Ideally this would bring the Ghost away from the player. In the end, however, I didn't get the chance to implement
+it into the decision tree.
+-PursuePathBehavior
+It was supposed to follow the player along an ideal path according to the pathfinding algorithm, but ended up taking
+longer than expected. It does pursue the player now, though.

@@ -30,8 +30,6 @@ void PathfindBehavior::update(Agent* owner, float deltaTime)
 	if (ownerTile.x == nextTile.x && ownerTile.y == nextTile.y) {
 		if (!m_path.empty())
 			m_path.pop_front();
-
-		//m_needPath = true;
 	}
 
 	//Find the direction
@@ -65,6 +63,5 @@ void PathfindBehavior::updatePath(Agent* owner, MathLibrary::Vector2 destination
 	NodeGraph::Node* ownerNode = m_maze->getTile(owner->getWorldPosition()).node;
 	NodeGraph::Node* targetNode = m_maze->getTile(destination).node;
 	m_path = NodeGraph::findPath(ownerNode, targetNode);
-	//if (!m_path.empty()) m_path.pop_front();
 	m_needPath = false;
 }
